@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 5000px;
+  /* background-color: blue; */
+}
+.start {
+  background-color: #03a9f4;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  left: 75%;
+  top: 20px;
+}
+.start::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent #eee transparent transparent;
+  right: -5px;
+  top: -5px;
+}
+.base {
+  width: 70%;
+  height: 650px;
+  background-color: #eee;
+  padding: 40px;
+  position: relative;
+}
+.parent1 {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  background-color: #eee;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  left: 150px;
+  bottom: 50px;
+}
+.parent1 div {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1px;
+  text-indent: 30px;
+}
+.parent1 header {
+  background-color: tomato;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  margin-bottom: 0;
+}
+.parent2 {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  background-color: #eee;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+}
+.parent2 div {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1px;
+  text-indent: 30px;
+}
+.parent2 header {
+  width: 100%;
+  padding: 10px;
+  background: #03a9f4;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  margin-bottom: 0;
+}
+.false {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 30px;
+  background-color: #e91e63;
+  color: white;
+}
+.false::before {
+  content: "x";
+  position: absolute;
+  color: white;
+  right: 6px;
+}
+.true {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 30px;
+  background-color: #03a9f4;
+  color: white;
+}
+.true::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: white;
+  left: 10px;
+  top: 5px;
+}
+.true::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5px;
+  transform: rotate(-45deg);
+  background-color: white;
+  left: 6px;
+  bottom: 7px;
+}
+.easy {
+  width: 800px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-top: 5px solid #e91e63;
+  border-bottom: 5px solid #e91e63;
+  border-right: 60px solid #e91e63;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.easy::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 120px;
+  border-style: solid;
+  border-color: transparent #e91e63 transparent transparent;
+  right: 0;
+}
+.easy::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff9800;
+  right: 130px;
+}
+.easy p {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: fit-content;
+  margin-left: 100px;
+  position: relative;
+}
+.easy p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 125px solid #e91e63;
+  border-right: 125px solid transparent;
+  left: -110px;
+  bottom: -105px;
+}
+.easy p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 125px solid #e91e63;
+  border-right: 125px solid transparent;
+  left: -110px;
+  top: -105px;
+}
+.parent3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px 20px;
+  width: 500px;
+  height: 500px;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 20px;
+}
+.parent3 div {
+  background-color: #cce8ea;
+}
+.g4 {
+  grid-column: span 3;
+}
+.main {
+  height: 1000px;
+  filter: grayscale(100%);
+  z-index: -1;
+  position: relative;
+  background-image: url(images/people-girl-alone-jungle-standing-outdoors-nature-panoramic-lockscreen-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px auto;
+}
+.basic {
+  background-color: #ddd;
+  width: 300px;
+  height: 800px;
+  margin: 10px auto;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 10%);
+  padding: 10px;
+  gap: 5px 5px;
+}
+.bar {
+  width: 1000px;
+  height: 200px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+  margin: 10px auto;
+}
+header {
+  background-color: black;
+}
+section {
+  background-color: lightseagreen;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li {
+  display: block;
+  padding: 7px;
+  color: white;
+  position: relative;
+}
+.hard {
+  background-color: gray;
+  width: 300px;
+  height: 300px;
+  margin: 200px auto;
+  box-shadow: -152px -152px 0 0 #ff5722, -152px 152px 0 0 #03a9f4,
+    152px -152px 0 0 #8bc34a, 152px 152px 0 0 #ffc107;
+}
+label {
+  background-color: white;
+  color: #777;
+  padding: 5px;
+  
+}
+input {
+  padding: 5px;
+}
+select {
+  padding: 5px;
+}
+button {
+  padding: 5px;
+
+  color: #777;
+}
+.colors {
+  --angle: 0deg;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+  color: black;
+  position: relative;
+  font-size: 20px;
+  background-image: linear-gradient(white, white),
+    conic-gradient(from var(--angle), #f44336 12.5%, #2196f3 12.5%, #2196f3 25%, #4caf50 25%, #4caf50 37.5%, #ffc107 37.5%, 
+    #ffc107 50%, #f44336 50%,#f44336 62.5%,#2196f3 62.5%, #2196f3 75%, #4caf50 75%, #4caf50 87.5%, #ffc107 87.5%);
+  background-clip: padding-box ,border-box;
+  background-origin: border-box;
+  border: solid 5px transparent;
+  animation: loop 4s linear infinite; 
+}
+
+@keyframes loop {
+  to {
+    --angle:360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
