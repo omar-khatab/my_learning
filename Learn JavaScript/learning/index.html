@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn javascript</title>
+    <link rel="stylesheet" href="/learning/Master.css">
+  </head>
+  <body>
+    <div id="hello">Hello</div>
+    <button id="show">Show</button>
+    <!-- forEach : Higher order function -->
+    <ul>
+      <li class="active">One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <div class="content">
+      <div>Div One</div>
+      <div>Div Two</div>
+      <div>Div Three</div>
+    </div>
+    <button id="cl">click</button>
+    <br />
+    <!-- some examples to reach for them in js by DOM -->
+    <span class="my-span">My Span 1</span>
+    <span class="my-span">My Span 2</span>
+    <p>Hello My paragraph 1</p>
+    <p>Hello My paragraph 2</p>
+    <div id="my-div">Hello Div</div>
+    <form action="">
+      <input type="text" name="one" value="Hello" />
+    </form>
+    <form action="">
+      <input type="text" name="two" value="Hello" />
+    </form>
+    <a href="https://google.com">Google</a>
+    <a href="https://facebook.com">Facebook</a>
+    <!-- DOM(Get/Set) -->
+    <div class="js">JavaScript <span>Div</span> &lt;span&gt; </div>
+    <img src="" alt="" />
+    <a class="link" href="#">Google</a>
+    <!-- (DOM) Check attribute -->
+    <p class="para" title="Paragraph" data-src ="testing">Paragraph</p>
+    <div>test attribute</div> 
+    <div><!-- Osama -->Hello Div<p>Hello P</p><span>Hello Span</span><!-- Comment -->Hello</div>
+    <!-- DOM(Events) hint: can use them in html -->
+    <button id="btn" onclick="console.log('Clicked')">Button</button>
+    <form action="">
+      <input type="text" name="" id="">
+      <input type="submit" value="Submit Data">
+    </form>
+    <!-- Practice on DOM(Events) -->
+    <form action="">
+      <input type="text" name="username" placeholder="Max 10 Chars Only" id="">
+      <input type="text" name="age" placeholder="Cant Be Empty" id="">
+      <input type="submit" value="Submit Data">
+    </form>
+    <a href="https://google.com">Google</a>
+    <!-- DOM part2  -->
+    <form action="">
+      <input type="text" class="one" id="">
+      <input type="text" class="two" id="">
+      <input type="submit" value="Submit Data">
+    </form>
+    <a href="https://google.com" target="_blank">Google</a>
+    <!-- (DOM) Class List -->
+    <div id="my-div1" class="one two show test">Div With Many Classes</div>
+    <!-- (DOM) change style of elements -->
+    <div id="my-div2">Div With Many Classes</div>
+    <!-- DOM(Deal With Element) -->
+    <div id="my-div3">Div Has <span>Span</span></div>
+    <!-- (DOM) Traversing -->
+    <div id="my-div4">
+      <span class="one1">One</span>
+      <!-- comment -->
+      <span class="two1">Two</span>
+      <!-- comment -->
+      <span class="three1">Three</span>
+    </div>
+    <!-- DOM(Cloning) -->
+    <p id="my-p1" class="my-p1">This Is <span>P</span></p>
+    <div id="my-div5">Div</div>
+    <!-- addEventListener -->
+    <p id="my-p2">Clone Me</p>
+    <!-- BOM (setTimeout and cleatTimeout) -->
+    <button class="stop">Stop</button>
+    <div class="set-time">5</div>
+    <!-- BOM(window.location) -->
+    <div id="sec01">Section One</div>
+    <div id="sec02">Section Two</div>
+    <!-- BOM(Scrolling) -->
+    <button id="scroll">Up</button>
+    <style>
+      #scroll {
+        background-color: red;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+      }
+       body {
+        background-color: #eee;
+      }
+      .list {
+        padding: 0;
+        margin: 0;
+        background-color: #ddd;
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      .list li {
+        width: 60px;
+        height: 60px;
+        border: 2px solid transparent;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .list li.active,
+      .list li:hover {
+        opacity: 1;
+      }
+      .list li:first-child {
+        background-color: red;
+      }
+      .list li:nth-child(2) {
+        background-color: green;
+      }
+      .list li:nth-child(3) {
+        background-color: blue;
+      }
+      .list li:nth-child(4) {
+        background-color: black;
+      }
+      .experiment {
+        background-color: red;
+        width: 600px;
+        height: 300px;
+        margin: 20px auto;
+      }
+    </style>
+    <!-- BOM(localStorage) -->
+    <ul class="list">
+      <li class="active child-list" data-color="red"></li>
+      <li  data-color="green"></li>
+      <li  data-color="blue"></li>
+      <li  data-color="black"></li> 
+    </ul>
+    <div class="experiment"></div>
+    <!-- BOB(localStorage 2) -->
+    <form action="">
+      <input type="text" class="name" />
+    </form>
+    <!-- Regular Expression -->
+    <form id="register" action="" method="get">
+      <input type="text" id="phone" name="the-phone" maxlength="15" />
+      <input type="submit" value="Register" />
+    </form>
+    <!-- Promises -->
+    <p class="test1">Testing Text</p>  
+    <!-- it is be prefered put javascript file in the end of body to not face any problem in load of format on any element-->
+    <script src="Main.js"></script>
+    
+  </body>
+</html>

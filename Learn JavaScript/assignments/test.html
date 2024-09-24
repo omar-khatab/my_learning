@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScript Assignments</title>
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Cairo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      // Code One : this code doesn't read the h1 because this code is found before the h1 and it doesn't have window.onload
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .assign {
+        text-align: center;
+        padding-top: 20px;
+      }
+    
+      .assign input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+      }
+    
+      .assign input:focus {
+        outline: none;
+        border-color: #ccc;
+      }
+    
+      .assign [title="Current"] {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+    
+      .assign .classes-list {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+    
+      .assign .classes-list h5 {
+        margin: 0 0 10px;
+        text-align: left;
+      }
+    
+      .assign .classes-list div span {
+        background-color: #ff5722;
+        padding: 6px 10px 8px;
+        margin-right: 5px;
+        border-radius: 6px;
+        color: white;
+        display: inline-flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="el">Page Title</h2>
+    <div id="elzero">elzero</div>
+    <!-- Assignment of DOM (1) -->
+    <div id="elzero1" class="element" name="js">JavaScript</div>
+    <form action="">
+  <input type="number" name="dollar" placeholder="USD Dollar" />
+  <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+</form>
+<div class="one" title="two">Two</div>
+<div class="two" title="one">One</div>
+<img class="test" src="#" alt="One" />
+<img class="test" src="#" />
+<img class="test" src="#" alt="Three" />
+<img class="test" src="#" />
+<img class="test" src="#" />
+
+<form action="">
+  <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+  <input type="text" name="texts" class="input" placeholder="Elements Text" />
+  <select name="type" class="input">
+    <option value="Div">Div</option>
+    <option value="Section">Section</option>
+  </select>
+  <input type="submit" name="create" value="Create" />
+  <div class="results"></div>
+</form>
+  <!-- Assginment of DOM(2) --> 
+  <script>
+    // let linkTarget = document.getElementsByClassName("open")
+    // window.onload= () => {
+    //   linkTarget[1].click()
+    // }
+  </script>
+  <a class="open" href="https://google.com">Google</a>
+  <a class="open" href="https://elzero.org" target="_blank">Elzero</a>
+  <a class="not" href="https://facebook.com">Facebook</a>
+  <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+      <div class="assign">
+        <input type="text" class="classes-to-add" placeholder="Add Classes" />
+        <input type="text" class="classes-to-remove" placeholder="Remove Classes" />
+        <div class="element current" title="Current">Current Element</div>
+        <div class="classes-list">
+          <h5>Current Element Class Lists</h5>
+          <div></div>
+        </div>
+      </div>
+      <div class="our-element">Our Element</div>
+      <p>Paragraph</p>
+      <div>
+        <span>Hello</span>
+        <!-- We Need The Next Text Without Spaces -->
+        Elzero
+      </div>
+      <div>Element</div>
+      <span>Element</span>
+      <p>Element</p>
+      <article>Element</article>
+      <section>Element</section>
+      <form action="">
+        <select name="fonts" id="font">
+          <option value="Open">Open</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Roboto">Roboto</option>
+        </select>
+        <select name="colors" id="color">
+          <option value="white">white</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+          <option value="orange">orange</option>
+          <option value="black">black</option>
+          <option value="gray">gray</option>
+        </select>
+        <select name="" id="size">
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+          <option value="22">22</option>
+          <option value="24">24</option>
+          <option value="26">26</option>
+          <option value="28">28</option>
+          <option value="30">30</option>
+        </select>
+      </form>
+      <form action="">
+        <input type="text" class="save" id="">
+        <input type="text" class="save" id="">
+        <input type="text" class="save" id="">
+        <select name="" id="box">
+          <option value="omar">omar</option>
+          <option value="essam">essam</option>
+          <option value="salah">salah</option>
+          <option value="sara">sara</option>
+          <option value="eman">eman</option>
+        </select>
+      </form>
+    <script src="test.js"></script>
+  </body>
+</html>
