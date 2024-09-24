@@ -1,0 +1,1621 @@
+/* target all paragraph */
+p {
+color: green;
+font-size: 40px;    
+} 
+p {
+    color: darkblue;
+}
+/* if we have two identical lines of code the program takes the last line of the code.  
+   if we have an id attribute, we put # before word.  
+   if we have an class attribute, we put. before word.
+   The class or id attribute(identifier) do not start with number and if we have two words 
+   we must put - between two words. 
+*/
+.special {
+    color: indianred;
+}
+.user-test {
+    color: mediumslateblue;
+}
+._test {
+    color: olive; /*red name*/
+}
+.main {
+    color:rgb(150 20 150 / 80%); /*Red Green Blue Alpha channel*/
+    background-color: #ffd000; /*Color Hex code*/
+    background-image:url(../images/da2af292-8577-40f8-bab8-3f60b2776b45.jpg) ;
+    background-repeat: no-repeat; /* to repeat horizontally value= repeat-x and vertically value=repeat-y,
+    but if you want not repeat,the value=no-repeat  */
+    background-attachment: fixed;
+    background-position: 50% 60%; /* we can express the background-position by three methods:
+    1-percentage,2-pixels,3-words */
+    background-size: cover; /* we can express the background-size by three methods:
+    1-percentage,2-pixels,3-value like cover or contain */
+    /* top right bottom left */
+    /* 10px 10px 10px 10px  */
+    /* padding is used with percentage and pixels */
+    /* padding: 10px; */
+    /* 20px 10px 20px 10px */
+    /* padding: 20px 10px; */
+    /* 20px 10px 15px 10px  */
+    /* padding: 20px 10px 15px; */
+    padding-bottom: 10px;
+    /* margin looks like padding ,but margin can take negative value */
+}
+.secondary {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border-width: 10px 20px 15px 15px;
+    border-color: brown green red blue;
+    border-style: dotted solid dashed solid; */
+    border: 10px solid brown; /* shorthand */
+    /* border have top right bottom left like padding and margin */
+    outline: 10px solid blue; /*outline do not accept top right bottom left */
+}
+/* Display:
+        Block
+            - take full width if no width
+            -Add line break 
+            -Respect width , height , padding, margin
+
+        Inline
+            -Do not respect width, height
+            -Respect padding and margin , but just (right+left)
+            -Allow elements before and after it in the same line
+
+        Inline-Block
+            -Allow elements before and after it in the same line
+            -Respect width, height, padding, margin
+*/
+
+.first {
+    display: none;
+}
+.Third {
+    visibility: hidden;
+}
+/* display:none makes the element hide but do not occupy space , but visibility: hidden makes the element hide and occupy space */
+.One,
+.Two,
+.Three,
+.four {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ddd
+}
+
+.One {
+    border-bottom: 5px solid black;
+    color: coral;
+}
+
+.Two {
+    border-bottom: 5px solid darkgray;
+    color: darkred;
+}
+.Three {
+    border-bottom: 5px solid darkslategrey;
+    color: fuchsia;
+}
+
+/* nesting*/
+div .private {                 
+    color: red;
+}
+
+/* height is used as width and both is the same */
+._a {
+    color: teal;
+    background-color: blue;
+    width: fit-content;
+}
+
+._b {
+    color: violet;
+    background-color: tomato;
+    max-width: 500px;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+._c {
+    color: green;
+    background-color: greenyellow;
+    min-width: 50%;
+    max-width: 70%;
+}
+
+/* overflow-x is used for horizontal and overflow-y is used for vertical and overflow have many values 
+as auto,hidden and scroll */
+.overflow1 {
+    max-width: 200px;
+    height: 100px;
+    overflow-x: hidden;
+}
+.overflow2 {
+    max-width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+/* text-shadow: H-shadow V-shadow Blur color */
+/* any property is related with color ,we can express about it by name color or hex code or rgb */
+.elzero {
+    text-shadow: 1px 1px 1px blue;
+    background-color: #ddd;
+    text-align: center;
+    direction: ltr;
+    text-transform: capitalize;      /* text-transform have values like capitalize,uppercase and lowercase */
+
+}
+.arabic {
+    text-align: right;
+    direction: rtl;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #219963;
+    color: lightgreen;
+}
+.name {
+    background-color: #ddd;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-indent: 20%;
+}
+
+.test {
+    background-color: aquamarine;
+    line-height: 1.6;
+    width: 800px;
+    white-space: nowrap;
+}
+
+.playlist {
+    background-color: blue;
+    width: 300px;
+    word-break: break-all;
+}
+
+.text {
+    background-color: blueviolet;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text:hover {
+    overflow: visible;
+}
+
+div {
+    color: black;
+}
+
+.inherit p {
+    color: inherit;   /* inherit made the element take the property from its upper(parent) element, this valid for any property*/
+}
+
+div {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Css Units
+-px
+-em => time from upper element 
+-rem => root time from html element
+-percentage from upper element
+vw => view port width , this property changes upon width of the page ,its a dynamic property 
+vh => View port height, this is the same vw but according to height */
+
+div,
+p {
+font-size: 2vw;
+}
+
+.inherit h3 {
+    font-size: 1.5em;
+}
+.inherit p {
+    font-size: 150%;
+}
+.inherit span {
+    font-size: 2rem;
+}
+/* to reset any property we put normal, for example if we reset font-weight: bold;, we should put font-size: normal; */
+.inherit h3,
+.inherit p,
+.inherit span {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    cursor: grab;
+}
+
+button {
+    background-color: lightblue;
+    color: blue;
+    border: 3px solid darkblue;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.parent {
+    background-color: blue;
+    padding: 10px;
+}
+.parent div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    float: left;
+    width: calc((100% - 50px) / 4 );
+    margin-left: 10px;
+}
+.clear {
+    clear: both; /*to improve float and handle it*/
+}
+/* content width is: 100%
+5 spaces 10px*5 => 50px from content width
+100%-50px available space
+for 4 elements the width is: (100% - 50px) / 4 */
+
+/* if we want express the margin and calc of width by percentage 
+content width is: 100%
+5 spaces 1% => 5% from content width 
+95% available space 
+for 4 element the width is: (95% / 4)
+then width: calc (95% / 4); and margin: 1%; */
+
+.-one {
+    background-color: red;
+    opacity: 0.5;
+}
+.-two {
+    background-color: rgb(255 0 0 / 0.5);
+}
+
+.position1,
+.position2,
+.position3,
+.position4,
+.position5 {
+    width: 20%;
+    color: white;
+}
+.position1{
+    background-color: red;
+    position: relative;             /*default and reset value for position is static*/
+    left: 80px;
+    bottom: 10px;
+}
+.position2 {
+    background-color: blue;
+}
+.position3 {
+    background-color: green;
+    position: absolute;  /*position: absolute moves upon the page,                  
+                         but postion relative upon the neighbour element */
+    left: 100px;        
+    
+}
+.position4 {
+    background-color: turquoise;
+}
+.container {
+    background-color: indigo;
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+.position5 {
+    position: absolute;
+    background-color: black;
+    right: 80px;
+    bottom: 0;
+}
+.position6 {
+    background-color: coral;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+.sticky {
+    background-color: crimson;
+    color: #FFF;
+    position: sticky;
+    top: 0;
+}
+
+.z-index1,
+.z-index2,
+.z-index3 {
+    color: white;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.z-index1 {
+    background-color: red;
+    z-index: 3;          /* z-index express about the layers */  
+    top: 140px;
+    left: 10px;
+}
+.z-index2 {
+    z-index: 2;
+    background-color:blue ;
+    top: 70px;
+    left: 5px;
+}
+.z-index3 {
+    background-color: green;
+    z-index: 1;
+    
+}
+.list1 {
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /* list-style-type,list-style-postion and list-style-image, 
+    there are main property in lists and we have short cut list-style=type position image */
+}
+
+table{
+    width: 400px;
+    border-spacing: 0;
+}
+
+table td {
+    border: 1px solid gray;
+    background-color: #CCC;
+    padding: 5px;
+}
+
+table thead td {
+    background-color: black;
+    color: brown;
+    text-align: center;
+    border: 1px solid brown;
+    font-weight: bold;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+.empty:empty {
+    border: 10px solid darkblue;
+}
+.ch:checked {
+    display: none;
+}
+.in:focus {
+    border: 2px solid green;
+    outline: none;
+}
+.empty {
+    background-color: #CCC;
+    width: 100px;
+    height: 100px;
+}
+.lorem1 span {
+    background-color: red;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.lorem2::first-letter {
+    background-color: red;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+.lorem3::first-line {
+    color: green;
+}
+::selection {           /* global pseudo */
+    background-color: black;
+    color: yellow;
+}
+
+body {
+    min-height: 10000px;
+}
+
+.pseudo {
+  margin-bottom: 30px;
+  counter-increment: members;
+}
+.pseudo .one,
+.pseudo .two {
+  background-color: #CCC;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+  height: 95px;
+  text-align: center;
+ 
+}
+.pseudo .user {
+  background-color: #CCC;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 95px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+.clear {
+    clear: both;
+}
+
+.pseudo .one::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 0;
+    height: 0;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+}
+
+.pseudo .one::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -5px;
+    top: 0;
+    background-color: rgb(41, 83, 161);
+}
+
+.pseudo .two::before {
+    content: attr(data-text);
+    display: none;
+}
+
+.pseudo .two:hover::before {
+    display:inline-block;
+}
+
+.pseudo .two::after {
+    content: counter(members);
+    position: absolute;
+    background-color: mediumvioletred;
+    color: white;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    right: -10px;
+    top: 50%;
+    margin-top: -20px;
+
+}
+.list {
+    list-style: none;
+}
+.list .list2 {
+    position: relative;
+    width: 50px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.list .list2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent cyan transparent transparent;
+    
+}
+/*
+
+  Vendors Prefixes
+
+  Chrome
+  Safari
+  Firefox
+  IE, Edge
+  Opera
+
+  [1] New CSS Feature Appeared
+  [2] Browsers Tests The Feature In Version X
+  [3] Browsers Add Prefix To Give Developers The Ability To Use It
+  [4] The Feature Is Fully Supported In Version Y, No Need For Prefix
+
+  -webkit- => Chrome, Safari, New Opera Version
+  -moz- => Firefox
+  -ms- => Ie, Edge
+  -o- => Old Version of Opera
+
+*/
+
+.class {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/*
+  [1] Most of Users Is Using Modern Browsers
+  [2] Vs Code Addon To Add The Prefix
+  [3] Task Runner
+*/
+.radius {
+    background-color: darkblue;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border-top-right-radius: 25px 50px;
+    /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px; */
+    /* to make circle, we should make the width and height is equal and 
+    border radius equal half both of them, with another mean the border radius equal 50% */
+}
+    /* box-shadow => V-shadow | h-shadow | Blur | spread | color | inset 
+    and we can do multiple box-shadow */
+.element {
+    background-color: #CCC;
+    box-shadow: 5px 5px 10px 0 black , 5px 5px 10px blue;
+}
+* {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.sizing {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddd;
+}
+.sizing1 {
+  background-color: #eee;
+  width: calc((100% - 30px) / 2 );
+  margin-left: 10px;
+  float: left;
+  padding: 10px;
+  border: 2px solid red;
+}
+.transition {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: gray;
+    transition-duration: 1.5s;
+    transition-delay: 0.5;
+    transition-property: width, height;
+    transition-timing-function: ease-in;
+    /* transition: property duration delay timing-function;     => shorthand */
+    /* and we can put two transition shorthand for example: transition: width 2s, height 3s; */
+}
+.transition:hover {
+    width: 500px;
+    height: 100px;
+    margin-left: 20px;
+}
+.important {
+    background-color: blue !important; 
+    margin: 10px 0;
+    /* !important to make the property over right on same properties */
+}
+/* 
+The margin collapse
+[1] only vertical margin collapse
+[2] bigger margin always wins
+[3] margin collapsing happens when two elements do not have anything between us
+[4] Nesting does not prevent the collapse 
+*/
+.collapse {
+  overflow: hidden;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: #eee;
+}
+.collapse .one,
+.collapse .two {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.one {
+  background-color: #ddd;
+}
+.two {
+  background-color: #aaa;
+}
+.up {
+  background-color: red;
+  color: white;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.down {
+    background-color: green;
+    color: white;
+    height: 70px;
+    margin-top: 40px;   /* the margin collapse enables here */
+}
+/* 
+    Css Variables
+    - Global Variables
+    - Local variables
+    var(Variable Name, Fall back Value)
+    fall back value is alternative property if your variable vanished
+*/
+:root {
+    --MainColor: blue;      /* global variable */
+    --MainPadding: 10px;
+}
+.main1 {
+    background-color: var(--MainColor , black);
+    color: white;
+    padding: calc(20px + var(--MainPadding));
+}
+.var-h2 {
+    color: var(--MainColor);
+    background-color: #ddd;
+    padding: var(--MainPadding);
+}
+.var-p {
+    color: var(--MainColor);
+    border: 2px solid var(--MainColor);
+    padding: var(--MainPadding);
+}
+a:hover {
+    color: var(--MainColor);
+}
+.local {
+    --mainColor: black;           /* local variable */
+    background-color: var(--mainColor);
+    color: white;
+}
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value, row-reverse,column and column-reverse
+  - flex-wrap: nowrap => Default Value wrap and wrap-reverse
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]  (shorthand)
+  - justify-content: flex-start => Default value and flex-end, center,there are when we wrap, 
+    these determine the place 
+    space between , space around, 
+    space evenly= space between+space around, there are used when there are margin
+  - align-items: stretch => Default Value and flex-start, flex-end and center.
+    align-items likes justify-content, but vertically
+    align-content likes align-items, but this deals with whole content.
+   For Child:
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value, gives the element the priority according to value , 
+  if the value order is high for element, the element will take the first place
+  order is the high Accuracy property
+  - flex-basis : auto => default value, its likes width and height , but flex-basis proportional to flex-direction, 
+  if flex-direction row ,the flex-basis will look like the width and flex-basis will looks like the height, if flex-direction column 
+  - flex: [flex-grow] [flex-shrink] [flex-basis] 0 1 auto
+  - display: inline-flex likes inline-block to made any element besides the flex-box
+  - align-self: auto => auto and its likes align-items, but align-self is given to child and 
+    have same values of align-items 
+*/
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.flex div {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: calc( 92% / 4);
+    padding: 20px;
+}
+.float {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 600px;
+}
+.float div {
+    background-color: blue;
+    width: calc( 92% / 4);
+    text-align: center;
+    float: left;
+    color: white;
+    padding: 20px;
+    margin: 0 1%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    width: 200px;
+    height: 100px;
+}
+.flex1 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-color: #eee;
+    /* align-items: center; */
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+}
+.flex1 div {
+    background-color: red;
+    width: calc( 100% / 3);
+}
+
+.flex2 {
+    background-color: #eee;
+    width: 800px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-flex;
+}
+.flex2 div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+.flex2 .grow {
+    flex-grow: 5;
+    order: 6;
+}
+.flex2 .shrink {
+    flex-shrink: 3;
+    order: 5;
+    flex-basis: 200px;
+    flex: 0 200px;
+
+}
+.self {
+    align-self:flex-end;
+}
+.in {
+    display: inline-block;
+}
+img {
+    transition: 1.5s;
+    filter: grayscale(100%);
+}
+img:hover {
+    filter: grayscale(0%);
+}
+/* Gradients
+linear-gradient(Direction or Angle, Color Stop 1, Stop 2, ....)
+*/
+
+.gradient {
+    width: 400px;
+    height: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to top , gray 30%, black);
+    position: relative;
+}
+.gradient::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    background-image: 
+    linear-gradient(to right, 
+    #e91e63 20%,
+    #9c27b0 20%,
+    #9c27b0 40%,
+    #673ab7 40%,
+    #673ab7 60%,
+    #3f51b5 60%,
+    #3f51b5 80%, 
+    #2196f3 80% );
+}
+.caret {
+    caret-color: red;
+}
+a:hover {
+    color: red;
+}
+.pointer {
+    pointer-events: none;
+}
+input {
+    caret-color: red;
+}
+/* 
+Grid
+Parent
+ - display: grid | inline-grid
+ - grid-template-columns: [ Number of Columns In ] => [Px , % , Auto , Repeat , Fraction or Mix between]
+ hint: the auto is shy, but the fraction is greedy
+ if we put one 1fr and another 3fr. the one element takes the one third and another takes the two thirds
+ - grid-template-rows: [ Number of Rows Height In ] => [Px, % , Auto , Repeat, Fraction, Mix between
+ - gap: [Row Gap] [Column Gap] 
+ grid-template-row likes grid-template-columns, but this is for rows.
+Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+  we can express about this by 1/5 or span 
+  and we can make the mix : 2 /span 3 this mean we start of the second column and this will take three column
+  hint: expression by 1 / 5 include the interval only. 
+  grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+*/
+.grid {
+    margin: 20px auto;
+    width: 800px;
+    height: 800px;
+    background-color: #CCC;
+    display: grid;
+    /* grid-template-columns: 100px repeat(2, auto) 1fr auto; */
+    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+    grid-template-rows:  repeat(4, 1fr);
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px 10px;
+}
+.extension1 {
+    grid-column: 2 / 5;
+}
+.extension2 {
+    grid-row: span 3;
+}
+.extension3 {
+    grid-column : 2 / span 2;
+}
+.extension4 {
+    background-color: green;
+    grid-area: 3 / 2 / 5 / 5;
+    /* grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 5; */
+}
+.grid div {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid1 {
+    display: grid;
+    background-color: #ddd;
+    width: 600px;
+    height: 500px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    margin: 10px auto;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.grid1 div{
+    background-color: aqua;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+}
+.page {
+    height: 100vh;
+    background: #eee;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav "
+    "content content content content content content content . side side"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+.logo {
+    grid-area: logo;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+section {
+    grid-area: content;
+    background-color: rgb(49, 100, 158);
+    color: white;
+}
+aside {
+    grid-area: side;
+    background-color: aqua;
+    color: white;
+}
+footer {
+    grid-area: footer;
+    background-color: cadetblue;
+    color: white;
+}
+.grid2 {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+    background-color: gray;
+}
+.grid2 div {
+    background-color: green;
+    padding: 10px;
+}
+/* 
+2D transform => scale x , scale y and shorthand scale it is make the element taut(مشدود) and this include the margin,
+but the width or height do not take the margin and increase of one direction.
+hint: if we put the negative value the element flips with help of transition.
+scale(2) is equal scale(2, 2)
+2D transform => Rotate ( deg, radians , gradians, turns )
+hint: the negative degree made the element turn the reverse direction
+2D transform => translate takes two values and one value expresses about just one value and may be takes negative value
+2D transform => skew has skewX and skewY, its have same units that rotate has and one value do not express two values,
+with another mean skew(10deg) do not equal skew(10deg, 10deg).
+matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) 
+we put the value without units in matrix and the angle here is equal tan angle.
+hint: if we put these functions with their names we should take care from the order. 
+for example: matrix(1.2, 0.2679, 0, 1.2, 20, 20); this equal: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2); 
+transform-origin
+Syntax
+Default Values => 50% 50% 0
+2D Transform => transform-origin(X, Y)
+3D Transform => transform-origin(X, Y, Z)
+X-Axis
+- CSS Unit [px, em, rem]
+- %
+- Keyword
+-- Left = 0%
+-- Center = 50%
+-- Right = 100%
+Y-Axis
+- CSS Unit [px, em, rem]
+- %
+- Keyword
+-- Top = 0%
+-- Center = 50%
+-- Bottom = 100%
+3D transform => rotate3d(x-axis, y-axis, z-axis, rotate) or rotateX(); rotateY(); rotateZ();
+rotate 3d all axis have value between 0 and 1
+3D transform => translate3d(x-axis, y-axis, z-axis) or translateX(); translateY(); translateZ();  
+this is suitable for % and px
+and we must determine the perspective to enable translateZ and determine it in the parent an may be determine perspective-origin in the parent also
+backface-visibility => default value visible and hidden value to hidden element when rotate (flip)
+transform-style => default value is flat and preserve-3d to make the element keeps its space in 3D
+*/
+
+.transform1 {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* transform: scaleX(2);
+    transform: scaleY(2); */
+    transform: scale(2, 2);
+    transition: 0.5s;
+}
+.transform2 {
+    background: blue;
+    color: white;
+    transition: 1s;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.transform2:hover {
+    transform: scaleX(1);
+}
+.transform3 {
+    background-color: aqua;
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg); /* 90 deg = 0.5 turns */
+}
+.image {
+    overflow: hidden;
+    width: 958px;
+    height: 1280;
+}
+.image img {
+    transition: 0.5s;
+}
+.image:hover img {
+    transform:scale(1.3) rotate(5deg); /* we can do make opacity here too */
+    /* if we want put rotate with scale we should not make both of them on two lines but on one line and should the rotate with low degree
+     */
+}
+.transform4 {
+    background-color: olive;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100px, 100px);
+}
+.trans {
+    background-color: #CCC;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+.transform5 {
+    width: 200px;
+    height: 200px;
+    background-color: #ffd000;
+    transform: skewX(10deg);
+    margin: 200px auto;
+}
+.test1 {
+    width: fit-content;
+    margin: 10px auto;
+    position: relative;
+    color: white;
+    padding: 10px;
+}
+.test1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewX(20deg);
+    background-color: blue;
+    z-index: -1;
+}
+.transform6 {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+    /* transform: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2); */
+}
+.transform7 {
+    margin: 200px auto;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform-origin: left 50%;
+    transform: rotate(100deg);
+}
+.parent_trans {
+    background-color: #CCC;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    position: relative;
+}
+.parent_trans::before {
+    content: "";
+    transform: translate(0, 50%);
+    left: 0;
+    bottom: 50%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+.transform8 {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* transform: rotateX(50deg);
+    transform: rotateY(50deg);
+    transform: rotateZ(50deg); */
+    transform: rotate3d(0, 1, 1, 65deg);
+}
+.trans1 {
+    perspective: 300px;
+    perspective-origin: right top;
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    padding: 10px;
+}
+.transform9 {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    transform: translateX(100px);
+    transform: translateZ(100px);
+    /* transform: translate3d(0, 0, 100px);     */
+}
+.container1 {
+    width: 200px;
+    height: 100px;
+    margin: 200px auto;
+    perspective: 600px;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: right center;
+}
+.box:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+.box .face {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    background-color: blue;
+}
+.back {
+    background-color: red;
+    transform: rotateY(180deg);
+}
+body {
+    height: 25000px;
+}
+.mode {
+    background-color: red;
+    width: 200px;
+    margin: auto;
+    writing-mode: vertical-lr; /* turn what inside the element vertical and deal with him normally in width and height and padding means
+    width still increase horizontal and height vertical inverse of transform rotate */
+}
+/*
+Animation
+- KeyFrames
+- Name
+- Duration
+- Iteration Count
+- Timing Function
+- Spinner Loading
+- direction
+- Delay
+- Fill mode
+- Play State
+we can use the animation for any element we want, and we can determine the animation by words: from and to and this mean 50% to 100%, 
+and by percentage.
+iteration count: to determine the times that animation happens.
+timing functions: this property that existed in the transition.
+direction determines animation direction => default value normal. there are reverse, alternate, alternate-reverse. 
+alternate means every one count reverse direction of animation.
+fill-mode: makes the animation pause in particular property. values are forward to stop animation on first property, backward to stop animation on last property.
+and both that the direction determines them. 
+hint: fill-mode makes sense to direction.
+play state determines state of animation whose values are pause or running and running is default value
+delay looks like in transition and here if we put negative value in delay, this will reduce the time that existed in duration.
+if we use default value for property, we will not need to put it in animation and start directly.
+*/
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation-name: change-color;
+    animation-duration: 3s;
+    margin: 350px auto;
+}
+/* Code One */
+@keyframes change-color {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+/* Code Two */
+@keyframes change-color {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+@keyframes change-color {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: red;
+    }
+}
+.spin {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    margin: -200px auto;
+    border-radius: 50%;
+    border: 5px solid #e91e63;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.anime {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 300px auto;
+    animation-name: coloring;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation-delay: -2s;
+    /* animation: coloring 3s linear 2s infinite reverse;     shorthand */
+}
+.anime:hover {
+    animation-play-state: paused;
+}
+@keyframes coloring {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.load {
+    margin: -200px auto;
+    width: 200px;
+}
+.load div {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+    animation-name: loading;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.load .two {
+    animation-delay: 0.3s;
+}
+.load .three {
+    animation-delay: 0.6s;
+}
+@keyframes loading {
+    to {
+        opacity: 0.5;
+        transform: translateY(-20px);   
+    }
+}
+/*
+  CSS Selectors
+  - * => global selectors
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two => element have two classes to make formats on two classes different if we made format in one classes.
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name =. select classes exist in particular element
+  - .parent > .child => Direct Child =>it is not allowed for elements that inside the child.
+  - Element + Other Element => [div + p] select element followed by another element, should be direct element, 
+  here we select p followed by div directly   
+  - Element ~ Other Elements => [p ~ div] select elements followed by another element, it is not necessary to be direct element, 
+  but they should have a same level,that is mean child do not be selected. 
+  Here we select any div followed by p, but should this div have a same level with p, child div not allowed.
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word => target value have a particular word
+  string is a text and this include any text, even if inside a word. textdiv is a different from text div. 
+  first the div is considered a string, but second its a word, so here that select text div only. 
+  - [Attribute*=Value] => Contains A String, so here that will select textdiv and text div because string is a text
+  - [Attribute^=Value] => Start With A String , here select element that have a part of value
+  - :first-child
+  - :last-child
+  - :first-of-type => if we put p:first-of-type => thats mean we select first p inside the parent
+  - :last-of-type => if we put p:last-of-type => thats mean we select last p inside the parent
+  - :only-child => parent should have only one child 
+  - :only-of-type => if we put p:only-of-type => thats mean select only p inside the parent
+  - :not(Selectors) this is reverse selector determine anything except particular selector,
+  for example p:not(first-child), this mean anything except first-child 
+  - :nth-child(n) => determine selector with numbers, but count from the first, regardless the element 
+  - :nth-last-child(n) => determine selector with numbers, but count from the last, regardless the element
+  - :nth-of-type(n) => determine selector with numbers, but count from the first, but here count from element that you select 
+  - :nth-last-of-type(n) => determine selector with numbers, but count from the last, but here count from element that you select 
+  - :root => special for html element
+  - :checked => for element have checked attribute
+  - :empty => for element do not have any words or text inside it
+  - :disabled => for element have disabled attribute
+  - :required => for element have required attribute
+  - :focus => do formats for element when we focus on it
+  - ::selection => do formats when we select on any thing inside my web
+  - ::placeholder -> for element(input) have placeholder attribute
+  hint: we can use these attributes with selectors rules that we learned
+*/
+/*
+  Media Queries
+  Responsive Design
+*/
+.parent10 {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 250px auto;
+}
+.parent10 > div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 290px;
+}
+@media print {    /* this media for print properties, this mean it is appear when we print the web for report or other anything */
+    .parent10 > div:first-child {
+        display: none;
+    }
+}
+@media print {
+    .parent10 > div {
+        font-size: 100px;
+    }
+}
+@media (min-width:1000px) {
+    .parent10 > div {
+        background-color: blue;
+    }
+}
+/* media is used for put condition to achieve particular format
+here we put min-width:1000px like a condition to achieve background-color:blue; on particular element  */
+@media (min-width: 1000px) and (max-width: 1400px) {    /*here we make the condition like a range of width */
+    .parent10 > div {
+    background-color: blue;
+    }
+}
+.parent11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.parent11 > div {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+}
+/* Mobile */
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+    .parent11 > div {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Small Screens, here to make formats enabled here only (small screens), we add range in condition */
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .parent11 > div {
+    width: calc(25% - 5px);
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+}
+/* Custom for modify the formats on particular screens, here we format on small and medium screens only, this means we format on multiple ranges */
+
+/* Custom */
+
+@media (max-width: 1199px) {
+}
+/* we can make in html file css for media only by put media attribute in css link in html 
+and we can put media in any element in html and make formats on media that belong to this element*/
+
+/* Create Frame work 
+Frame work is make formats on Css, but this formats is repeated(we use this formats always),
+so we make repeated formats in Css and put it to particular classes, then put these classes in html on any element you want this formats for it, 
+for example: we make formats for centering and put class of centering on particular element in html to center this element 
+hint: it is preferred make frame work for formats that need more than one line */
+.parent12 {
+    position: relative;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 1200px;
+    height: 200px;
+}
+.parent12 div {
+    background-color: green;
+    color: white;
+}
+.product {
+    background-color: red;
+    color: white;
+}
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.border-r {
+    border-radius: 4px;  /* this is not preferred but for change border-radius for some elements, you give them this class(border-r) */
+}
+/*
+  CSS Global Values
+  - inherit
+  - initial => this value back format to default value
+  - unset => this value work as inherit if value can be inherited and also make as initial if value can not be inherited
+  --- If Inherit => inherit
+  --- If Not => initial
+  - revert CSS Level [4] => revert backs formats of elements to formats of user agent
+  user agent: formats that browser gives to your element automatically, if you do not put your formats.
+  - all => it is a value means all formats that you put to your element, for example: all: unset; 
+  ,this means all properties took unset value.
+*/

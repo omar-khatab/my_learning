@@ -1,0 +1,2032 @@
+
+.assign-1-shape-1 {
+    color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: blueviolet;
+    background-color: rgb(138 43 226);
+    background-color: hsl(271 76% 53%);
+    background-color: #8a2be2;
+}
+
+.assign-1-shape-2 {
+    color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(138 43 226 /50%) ;    
+}
+
+.assign-1-shape-3 {
+    color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(138 43 226 /10%) ;    
+}
+
+.assign-2-shape-1 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+}
+
+.assign-2-shape-3 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-x;
+}
+
+.assign-2-shape-4 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat;
+}
+
+.assign-3-shape-1 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat;
+}
+
+.assign-3-shape-1 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+    background-position: right ;
+}
+
+.assign-3-shape-3 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-3-shape-4 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat;
+}
+
+.assign-4-shape-1 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.assign-4-shape-2 {
+    color: black;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 80%;
+}
+
+.assign-4-shape-3 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 80%;
+    
+}
+
+.assign-4-shape-4 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+.shape1 {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: #DDD;
+    border: 5px solid red;
+    outline: 5px solid black;
+}
+
+.shape2 {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: #DDD;
+    border: 5px solid;
+    border-color:blue green; 
+    outline: 5px solid black;
+}
+
+.shape3 {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: #DDD;
+    border: 5px dashed;
+    border-color: red green blue yellow;
+    outline: 5px solid black;
+}
+
+.important1 {
+    width: 400px;
+    background-color: #ddd;
+    outline: 10px solid #ddd ;
+    border-left: 5px solid rgb(161, 20, 126);
+    margin: 10px;
+    padding: 15px;
+
+}
+
+.important2 {
+    width: 400px;
+    background-color: #ddd;
+    visibility: hidden;
+    padding: 15px;
+}
+
+.important3 {
+    width: 400px;
+    background-color: #ddd;
+    outline: 10px solid #ddd;
+    border-left: 5px solid rgb(31, 147, 182);
+    padding: 15px;
+    margin: 10px;
+}
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+.paragraph,
+.title {
+    color: green;
+}
+
+.one,
+.two,
+.three,
+.four {
+    color: white;
+    background-color: brown;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.four {
+    height: 30px;
+    overflow: hidden;
+}
+
+.shadow {
+    text-shadow: 1px 1px 0px red, 2px 1px 0px rgb(29, 55, 206);
+}
+
+._one,
+._two,
+._three {
+    color: black;
+    text-align: center;
+}
+._one{
+    text-transform: uppercase;
+}
+._two {
+    text-transform: capitalize;
+}
+._three {
+    text-transform: lowercase;
+}
+
+.lorem1,
+.lorem2,
+.lorem3 {
+    background-color: #DDD;
+    margin: 15px;
+    width: 400px;
+    padding: 10px;
+}
+.lorem2 {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.lorem3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lorem3:hover {
+    overflow: visible;
+}
+a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px;
+    margin: auto;
+    background-color: rgb(37, 175, 175);
+    color: white;
+    border-bottom: 5px solid rgb(19, 90, 90);
+    width: fit-content;
+}
+
+.my-p1 {
+        padding: 10px;
+        border: 3px solid orangered;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+}
+.my-p1 p {
+    border: inherit;
+    padding: inherit;
+    background-color: rgb(180, 178, 178);
+    color: black;
+    text-align: center;
+}
+.my-p2 {
+        padding: 10px;
+        border: 3px solid cyan;
+        width: 300px;
+        margin: auto;
+}
+.my-p2 p {
+    border: inherit;
+    padding: inherit;
+    background-color: rgb(180, 178, 178);
+    color: black;
+    text-align: center;
+}
+._four,
+._five,
+._six {
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}
+._four {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+._five {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2rem;
+}
+._six {
+    font-family: 'Jomhuria', cursive;
+    font-size: 1.5rem;
+}
+html {
+    font-size: 20px;
+}
+.float {
+    background-color: rgb(205, 205, 211);
+    text-align: center;
+    width: 800px;
+}
+.full-width,
+.float1,
+.float2,
+.float3 {
+    margin: 15px 0 0 15px;
+    padding:10px 0;
+    background-color: gray;
+}
+.full-width {
+    width: calc((100% - 30px ) /1);
+    background-color: gray;
+    float: left;
+}
+.float1 {
+    float: left;
+    width:calc((100% - 60px) /3);
+}
+.float2 {
+    float: left;
+    width: calc((100% - 45px) /2);
+}
+.float3 {
+    float: left;
+    width: calc((100% - 75px) /4);
+    margin-bottom: 15px;
+}
+.clear {
+    clear: both;
+}
+
+.normal,
+.one,
+.two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}
+.normal {
+    background-color: gray;
+}
+.one {
+    background-color: rgb(128 128 128 / 0.1);
+}
+.two {
+    background-color: gray;
+    opacity: 0.1;
+}
+
+.red,
+.blue,
+.black,
+.green {
+    position: relative;
+    width: 80px;
+    height: 50px;
+}
+.green {
+    background-color: cyan;
+    z-index: 2;
+    top: 145px;
+}
+.red {
+    background-color: rgb(37, 175, 175);
+    z-index: 3;
+    top: 100px;
+    left: 5px;
+}
+.blue {
+    background-color: rgb(204, 65, 65);
+    z-index: 4;
+    top: 55px;
+    left: 10px;
+}
+.black {
+    background-color: black;
+    z-index: 1;
+}
+
+body {
+    min-height: 10000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lorem {
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    border: 2px solid;
+    border-color: rgb(204, 65, 65) rgb(84, 167, 216);
+    background-color: #ddd;
+    padding: 20px;
+    position: relative;
+}
+
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+    background-color: rgb(117, 174, 212);
+    padding: 5px;
+    width: 20px;
+    position: absolute;
+    text-align: center;
+}
+.top-left {
+    top:-15px;
+    left: -15px;
+    border-right: 2px solid rgb(204, 65, 65) ;
+}
+.bottom-left {
+    bottom: -15px;
+    left: -15px;
+    border-right: 2px solid rgb(204, 65, 65);
+}
+.top-right {
+    top: -15px;
+    right: -15px;
+    border-left: 2px solid rgb(204, 65, 65);
+}
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+    border-left: 2px solid rgb(204, 65, 65);
+}
+
+li {
+    background-color: #ddd;
+    margin: 5px;
+    padding: 15px;
+}
+ol {
+    margin-bottom: 5px;
+    padding-left: 25px;
+}
+.list {
+    width: 400px;
+    list-style-type: none;
+    margin: auto;
+}
+li li {
+    background-color: white;
+    padding: 5px;
+    margin:5px 5px 5px 20px;
+}
+li ul li {
+    background-color: white;
+    margin:5px 5px 5px 0;
+    list-style-position: inside;
+    padding: 5px;
+}
+li ul {
+    padding-left: 0;
+}
+.list2 {
+    list-style-type: upper-roman;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+.span1,
+.span2 {
+    width: fit-content;
+    padding: 5px;
+    color: white;
+}
+.span1 {
+    background-color: rgb(46, 95, 199);
+}
+.span2 {
+    background-color: rgb(211, 59, 97);   
+}
+
+table {
+    border-spacing: 0;
+    width: 700px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table td {
+    background-color: rgb(224, 224, 224);
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+table thead td {
+    background-color: rgb(47, 46, 46);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+.div1,
+.div2 {
+    margin: 10px auto;
+    width: 300px;
+    height: 60px;
+    background-color: #CCC;
+    text-align: center;
+    line-height: 60px;
+}
+.div2 {
+    background-color: red;
+}
+.div3 {
+    margin: auto;
+    background-color: #CCC;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.div3::first-letter {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: -50px;
+    padding:10px;
+    vertical-align: middle;
+}
+.p1 {
+    background-color:#eee ;
+    color: black;
+    padding: 10px;
+    width: 400px;
+    margin: 10px auto;
+    position: relative;
+    border-left: 5px solid rgb(223, 32, 111);
+}
+.p1::before {
+    content: attr(data-person);
+    background-color: #ccc;
+    text-align: center;
+    width: 70px;
+    padding: 10px;
+    position: absolute;
+    left: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.p1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -25px;
+    top: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color:transparent rgb(223, 32, 111) transparent transparent;
+    margin-top: -10px;
+}
+.p2 {
+    background-color: #eee;
+    color:black;
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    margin: 10px auto;
+    counter-increment: numbers;
+    position: relative;
+    line-height: 30px;
+    border-right: 5px solid tomato ;
+}
+.p2::before {
+    content: counter(numbers);
+    position: absolute;
+    background-color: tomato;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    padding: 0 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+}
+.shadow {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0 0 rgb(106, 174, 230), -5px -5px 0 0  rgb(195, 37, 111);
+    background-color: #eee;
+    margin: 20px;
+    position: relative;
+    counter-increment: numbers;
+    border: 2px solid black;
+}
+.shadow::before {
+    content: counter(numbers);
+    background-color: black;
+    color: white;
+    top: -13px;
+    right: 50%;
+    text-shadow: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin-right: -12.5px;
+}
+.shadow::after {
+    content: "Element";
+    text-shadow: none;
+    position: absolute;
+    top:50%;
+    margin-top: -12.5px;
+    left: 11.5px;
+}
+* {
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.radius {
+    background: #eee;
+    border-top-left-radius: 5px 10px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px 10px ;
+    border-bottom-left-radius: 20px;
+    width: 50px;
+    height: 45px;
+    margin: auto;
+    box-shadow: 0 0 2px 2px gray inset;
+}
+.prefix {
+    width: 550px;
+    background-color: #eee;
+    margin: 10px auto;
+    height: 250px;
+    border: 1px solid gray;
+    position: relative;
+}
+.prefix1,
+.prefix2 {
+    float: left;
+    width: calc((100% - 75px)/2);
+    margin: 10px 0 0 25px;
+    background-color:#ddd;
+    position: relative;
+    height: calc((100% - 20px) /1);    
+}
+.prefix2 {
+    right: -5px;
+}
+.prefix1 {
+    left: -5px;
+}
+
+.prefix1::before {
+    content: "Basic";
+    position: absolute;
+    background-color: rgb(37, 124, 195);
+    color: white;
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    right: 50%;
+    margin-right: -100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.prefix2::before {
+    content: "Pro";
+    position: absolute;
+    background-color: rgb(37, 124, 195);
+    color: white;
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    right: 50%;
+    margin-right: -100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.prefix::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 174, 230);
+    width: 2px;
+    height: calc(100% - 20px);
+    margin-right: -1px;
+    right: 50%;
+    margin-top: 10px;
+}
+.prefix::after {
+    content: "Or";
+    position: absolute;
+    background-color: rgb(106, 174, 230);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    right: 50%;
+    margin-right: -12.5px;
+    margin-top: -12.5px;
+}
+.pre1,
+.pre2 {
+    background-color: rgb(182, 179, 179);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 10px;
+    right:50%;
+    margin-right: -50px;
+    text-align: center;
+    line-height: 100px;
+    transition: all 1.5s;
+}
+.pre1:hover,
+.pre2:hover {
+    background-color: black;
+    color: white;
+}
+body {
+    min-height: 12000px;
+}
+.transition {
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    margin: 100px auto 10px;
+    padding: 5px;
+    background-color: #eee;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    position: relative;
+}
+.transition:hover {
+    margin-top: 50px;
+}
+.transition::before {
+    content: "wil go down after half second";
+    background-color: #ccc;
+    width: 300px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -150px;
+    transition: 1s 0.5s;
+}
+.transition:hover::before {
+    top: 50%;
+}
+.important {
+    background-color: #eee      !important;
+    width: 400px                    !important;         
+    font-size: 20px                 !important;
+    margin: auto                    !important;
+    border: none                    !important;
+    color: #eee                    !important;
+    position: relative;
+}
+.important::before {
+    content: "Elzero";
+    text-align: center;
+    color: black;
+    width: 100px;
+    position: absolute;
+    right: 50%;
+    margin-right: -50px;
+    font-weight: bold; 
+}
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+.variable {
+    color: var(--mainColor, red);
+    padding: var(--mainPadding , 5px);
+    border: 3px solid var(--mainColor, black);
+    margin: 10px 0;
+}
+.test {
+    display: flex;
+    background-color: #ddd;
+    color: orangered;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 5px 0 0 0 orangered , -5px 0 0 0 cornflowerblue;
+}
+.parent {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #ddd;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:space-between;
+    padding: 10px;
+}
+.parent div {
+    width: calc( 98% / 3);
+    background-color: rgb(224, 70, 43);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}   
+.parent1 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #ddd;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.parent1 div {
+    color: white;
+    background-color: rgb(31, 83, 143);
+    width: calc( 94% / 3);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child6 {
+    order: 1;
+    align-self: stretch;
+}
+.child1 {
+    order: 6;
+    align-self: flex-end;
+}
+.child2 {
+    order: 5;
+    
+}
+.child3  {
+    order: 2;
+    align-self: flex-start;
+
+}
+.child4 {
+    order: 2;
+}
+.child5 {
+    order: 4;
+    align-self: stretch;
+}
+.parent2 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin:  10px auto;
+    background-color: #ddd;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.parent2 div {
+    background-color: lightseagreen;
+    height: calc( 98% /3);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child7,
+.child9 {
+    align-self: flex-end;
+    width: 5%;
+}
+.child8 {
+    width: 50%;
+}
+.parent3 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #ddd;
+    justify-content: space-between;
+    padding: 10px;
+}
+.parent3 div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( 70% / 4);
+    height: 50%;
+}
+.child10 {
+    background-color: orange;
+    order: 2;
+    align-self: flex-start;
+}
+.child11 {
+    background-color: green;
+    order: 3;
+    align-self: flex-end;
+}
+.child12 {
+    background-color: brown;
+    order: 4;
+    align-self: flex-start;
+}
+.child13 {
+    background-color: purple;
+    order: 1;
+    align-self: flex-end;
+}
+:root {
+    --MainColor: black;    
+    --MainPadding: 10px;
+    --font-size: 10px;
+    --secondarycolor: #ddd;
+}
+.page {
+    background-color: #eee;
+    display: flex;
+    padding: var(--MainPadding);
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    justify-content: space-between;
+    flex-flow: column wrap; 
+}
+.page div {
+    color: var(--MainColor);
+    font-size: var(--font-size);
+}
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-basis: 10%;
+}
+.logo {
+    background-color: var(--secondarycolor);
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    background-color: var(--secondarycolor);
+    list-style: none;
+    width: 700px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+.links .layout {
+    background-color: var(--secondarycolor);
+    margin: 3px;
+    width: fit-content;
+    font-size: var(--font-size);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--secondarycolor);
+    flex-basis: 10%;
+    align-items: center;
+    padding: var(--MainPadding)
+}
+.main-area {
+    display: flex;
+    background-color: #eee;
+    flex-basis: calc(80% - 20px);
+}
+.content,
+.sidebar {
+    background-color: var(--secondarycolor);
+    padding: var(--MainPadding);
+}
+.content {
+    flex-basis: 70%;
+    margin-right: 10px; 
+}
+.sidebar {
+    flex-basis: 30%;
+}
+.gradient {
+    text-align: center;
+    line-height: 80px;
+    width: 600px;
+    height: 80px;
+    margin: 10px auto;
+    background-color: #ddd;
+    border-right: 5px solid purple;
+    border-left: 5px solid tomato;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+}
+.gradient::first-letter {
+    color: tomato;
+}
+.gradient::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,
+    tomato 20%,
+    #2196f3 20%, 
+    #2196f3 40%, 
+    #4caf50 40%,
+    #4caf50 60%, 
+    #e91e63 60%, 
+    #e91e63 80%, 
+    purple 80% );
+}
+.gradient::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,
+    tomato 20%,
+    #2196f3 20%, 
+    #2196f3 40%, 
+    #4caf50 40%,
+    #4caf50 60%, 
+    #e91e63 60%, 
+    #e91e63 80%, 
+    purple 80%);
+}
+.pointer input {
+    background-color: #eee;
+    color: black;
+    caret-color: red;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+.pointer div {
+    position: relative;
+    width: 600px;
+    margin: 10px auto;
+}
+.pointer div::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50%;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, tomato 50%, #2196f3 50%);     
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 10% 90%;
+    margin: 10px auto;
+}
+.grid div {
+    background-color: lightslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    counter-increment: numbers;
+    position: relative;
+}
+.grid div::before {
+    content: "Element";
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 40%;
+}
+
+.grid div::after {
+    content: counter(numbers);
+    position: absolute;
+    left: 65%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    margin: 10px auto;
+    gap: 20px 20px;
+    grid-template-columns: min-content auto auto min-content;
+    grid-template-rows: auto min-content;
+}
+.grid1 div {
+    background-color: rgb(53, 49, 49);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 20px 20px;
+    margin: 10px auto;
+}
+.grid2 div {
+    background-color: lightseagreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v1 {
+    grid-column: span 3;
+    order: 8;
+}
+.v2 {
+    grid-column: span 2;
+    order: 2;
+}
+.v3 {
+    order: 3;
+}
+.v4 {
+    order: 4;
+}
+.v5 {
+    grid-area: 3 / 2 / 6 / 4;
+    order: 5;
+}
+.v6 {
+    order: 6;
+}
+.v7 {
+    order: 7;
+}
+.v8 {
+    grid-column: span 3;
+    order: 1;
+}
+.grid3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    gap: 10px 10px;
+    margin: 10px auto;
+}
+.grid3 div {
+    background-color: rgb(223, 32, 111);
+    color: white;
+    text-align: center;
+}
+.layout1 {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "head head head"
+    "sec sec side"
+    "foot foot foot";
+}
+.head {
+    grid-area: head;
+    background-color: #03a9f4;
+    color: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.head::before {
+    content: "Header";
+    position: absolute;
+    font-size: 10px;
+}
+section {
+    grid-area: sec;
+    background-color: orangered;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+section::before {
+    content: "Section";
+    position: absolute;
+    font-size: 10px;
+}
+aside {
+    grid-area: side;
+    background-color: gray;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+aside::before {
+    content: "Aside";
+    position: absolute;
+    font-size: 10px;
+}
+.footer {
+    grid-area: foot;
+    background-color: #009688;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+.footer::before {
+    content: "Footer";
+    position:absolute;
+    font-size: 10px;
+}
+.challenge {
+    background-color: #eee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    gap: 10px 10px;
+}
+
+.challenge p {
+    color: rgb(180, 179, 179);
+    font-weight: bold;
+}
+.challenge div {
+    position: relative;
+}
+.ch1 {
+    border-bottom: 4px solid orangered;
+    grid-column: span 2;
+    background-color: white;
+    padding: 20px;
+}
+.ch2 {
+    border-bottom: 4px solid orangered;
+    background-color: white;
+    padding: 20px;
+}
+.ch3 {
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid orangered;
+    grid-row: span 3;
+    padding: 20px;
+}
+.ch4 {
+    border-bottom: 4px solid orangered;
+    grid-row: span 2;
+    background-color: white;
+    padding: 20px;
+}
+.ch5 {
+    border-bottom: 4px solid orangered;
+    background-color: black;
+    color: white;
+    grid-column: span 2;
+    padding: 20px;
+}
+.ch6 {
+    border-bottom: 4px solid orangered;
+    grid-column: span 2;
+    background-color: white;
+    padding: 20px;
+}
+.ch7 {
+    border-bottom: 4px solid orangered;
+    background-color: white;
+    padding: 20px;
+}
+.ch8 {
+    border-bottom: 4px solid orangered;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.ch9 {
+    border-bottom: 4px solid orangered;
+    background-color: white;
+    padding: 20px;
+}
+.ch10 {
+    border-bottom: 4px solid orangered;
+    background-color: white;
+    padding: 20px;
+}
+.lol1 {
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px 0;
+}
+.lol2 {
+    line-height: 30px;
+    padding: 10px 0;
+}
+.quote {
+    color: #ccc;
+    font-size: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: -45px;
+}
+.transform1 {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2196f3;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.transform1::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #e91e63;
+    z-index: -1;
+    transform: rotate(5deg);
+    position: absolute;
+    left: 0; 
+}
+.transform1::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #2196f3;
+    z-index: -1;
+    transform: rotate(-5deg);
+    position: absolute;
+    left: 0;
+}
+.transform2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 30px auto;
+    position: relative;
+    border: 1px solid #ccc;
+    font-size: 25px;
+}
+.transform2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transition: 0.5s;
+}
+.transform2::after {
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -20px 0 0 -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #2196f3 transparent #2196f3 #2196f3;
+    transition: 0.5s 0.3s;
+}
+.transform2:hover::before,
+.transform2:hover::after {
+    transform: rotate(360deg);
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --Color: orangered;
+}
+.trans1 {
+    color: white;
+    background-color:var(--Color);
+    width: 150px;
+    height: 50px;
+    margin: 100px auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.trans1::before {
+    content: "";
+    background-color: var(--Color);
+    width: 102%;
+    height: 95%;;
+    z-index: -1;
+    transform: matrix(1, -0.3639, 0, 1, 0, 0) rotate(10deg);
+    position: absolute;
+}
+.trans1::after {
+    content: "";
+    background-color: var(--Color);
+    width: 102%;
+    height: 95%;
+    z-index: -1;
+    transform: matrix(1, 0.3639, 0, 1, 0, 0) rotate(-10deg);
+    position: absolute;
+}
+.trans2 {
+    color:white;
+    background-color: #009688;
+    width: 150px;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+.trans2::before {
+    content: "";
+    height: 100%;
+    width: 10px;
+    transform: skewX(15deg);
+    background-color: white;
+    position: absolute;
+    left: -5px;
+    top: 0;
+}
+.trans2::after {
+    content: "";
+    height: 100%;
+    width: 10px;
+    transform: skewX(15deg);
+    background-color: #009688;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+.trans3 {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin: 60px auto;
+    position: relative;
+    transform: rotateZ(45deg);
+}
+.trans3::before {
+    content: "Elzero";
+    color: white;
+    width: 0;
+    height: 0;
+    border-bottom: 250px solid #607d8b;
+    border-right:250px solid transparent;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    transform: rotateZ(-45deg);
+    line-height: 465px;
+    display: flex;
+    text-indent: 20%;
+    box-shadow: 0 5px 0 0 black;
+}
+.trans3::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 250px solid #607d8b;
+    border-left: 250px solid transparent;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    transform: rotate(-45deg);
+    box-shadow: 0 5px 0 0 black;
+    z-index: -1;
+}
+.trans4 {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    position: relative;
+    transition: transform 1s;
+}
+.trans4:hover {
+    transform: rotateY(180deg);
+}
+.trans4::before,
+.trans4::after {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    color: white;
+}
+.trans4::before {
+    content: "Front";
+    background-color: #e91e63;
+    
+}
+.trans4::after {
+    content: "Back";
+    background-color: #2196f3;
+    transform: rotateY(-180deg);
+}
+.trans5 {
+    width: 200px;
+    height: 200px;
+    margin: -100px auto;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    position: relative;
+    transition: transform 1s;
+}
+.trans5:hover {
+    transform: rotateX(-180deg);
+}
+.trans5::before,
+.trans5::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+}
+.trans5::before {
+    content: "Front";
+    background-color: #e91e63;
+}
+.trans5::after {
+    content: "Back";
+    background-color: #2196f3;
+    transform: rotateX(180deg);
+}
+.anime1 {
+    width: 50px;
+    height: 50px;
+    margin: 200px auto;
+    border: 5px solid #e91e63;
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+}
+.anime1:hover,
+.anime1:hover::before,
+.anime1:hover::after {
+    animation-play-state: paused;
+}
+.anime1::before {
+    content: "";
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 5px solid #03a9f4;
+    border-right-color: transparent;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -15px; 
+    animation: rotate 1s linear infinite;
+}
+.anime1::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    border-top-color: transparent;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+    form {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.anime2 {
+    width: 50px;
+    height: 50px;
+    margin: 200px auto;
+    border: 5px solid #03a9f4;
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+}
+.anime2:hover,
+.anime2:hover::before,
+.anime2:hover::after {
+    animation-play-state: running;
+}
+.anime2::before {
+    content: "";
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    border-right-color: transparent;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -15px; 
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+}
+.anime2::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top-color: transparent;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+}
+.anime3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 5px solid black;
+    border-left-color: transparent;
+    margin: -100px auto;
+    display: block;
+    animation: loading 1s ease-in infinite reverse;
+}
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.challenge2 {
+    display: inline-grid;
+    width: 300px;
+    height: 500px;
+    background-color: #eee;
+    margin-left: 30%;
+    margin-top: 10%;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.challenge2 div {
+    background-color: rgb(32, 31, 31);
+    padding: 35px;
+}
+.an1 {
+    grid-row: span 3;
+}
+.challenge2::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    right: 35px;
+    top: 35px;
+    animation: moving1 6s linear infinite;
+}
+@keyframes moving1 {
+    5% {
+        transform: translateX(-190px);
+    }
+    10% {
+        transform: translate(-190px, 195px);
+    }
+    15% {
+        transform: translateY(195px);
+    }
+    20% {
+        transform: translate(-190px, 195px);
+    }
+    25% {
+        transform: translate(-190px, 390px);
+    }
+    30% {
+        transform: translateY(390px);
+    }
+    35% {
+        transform: translate(-190px, 390px)
+    }
+    40% {
+        transform: translate(-190px, 0);
+    }
+    45% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.challenge3 {
+    display: inline-grid;
+    width: 300px;
+    height: 500px;
+    background-color: #eee;
+    padding: 20px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    margin: -10px;
+    position: relative;
+}
+.challenge3 div {
+    background-color: rgb(32, 31, 31);
+    padding: 35px;
+}
+.an2 {
+    align-self: flex-end;
+}
+.challenge3::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 35px;
+    bottom: 35px;
+    animation: moving2 6s linear 3.3s infinite;
+}
+@keyframes moving2 {   
+    0% {
+        background-color: orange;
+    }
+    10% {
+        transform: translate(0%, 0%);
+    }     
+    20% {
+        transform: translateX(-190px);
+    }
+    40% {
+        transform: translate(-190px, -390px);
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+        transform: translate(-190px, -390px);
+        background-color: orange;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-190px, -390px);
+        background-color: orange;
+    }
+} 
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px auto;
+} 
+.media div {
+    background: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+span:only-of-type {
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+@media print {
+    .assign-one {
+        font-size: 40px;
+}
+}
+@media (max-width: 991px) {
+}
+@media (min-width: 992px) {
+    .media div {
+        color: red;
+        width: calc(50% - 25px);
+    }
+}
+@media (min-width: 1200px) {
+    .media div {
+        color: #009688;
+        width: calc(25% - 25px);
+    }
+}
+.media1 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
+}
+.media1 div {
+    background: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+@media (min-width: 992px) {
+    .media1 {
+        color: red;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .me1 {
+        grid-column: span 3;
+    }
+}
+@media (min-width: 1200px) {
+    .media1 {
+        color: #009688;
+        grid-template-columns: 1fr 1fr;
+    }
+    .me1 {
+        grid-column: span 2;
+    }
+    .me2 {
+        grid-column: span 2;
+    }
+}
+.frame {
+    background-color: #ddd;
+    margin: 20px auto;
+    position: relative;
+    width: 1200px;
+    height: 200px;
+}
+.frame div {
+    background-color: red;
+    color: white;
+}
+.frame1 {
+    background-color: blue;
+    color: white;
+}
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.frame1 ~ div {
+    background-color: #ddd;
+    margin: 30px auto;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+.arrow.top::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow.right::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ddd;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+.arrow.bottom::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ddd transparent transparent transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow.left::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+}

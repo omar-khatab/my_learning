@@ -1,0 +1,19 @@
+div.main.red {
+    color: red;
+}
+.child:nth-child(2) {
+    color: red;
+}
+.baby:only-child {
+    color: red;
+}
+[title]:not(.no-need):not(.parent [title])  {
+    color: red;
+}
+div:not(.no-need) [title]:last-child:not(.no-need) {
+    color: red;
+}
+div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}
+
