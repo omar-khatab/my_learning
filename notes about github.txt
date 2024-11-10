@@ -1,0 +1,21 @@
+pull request: this is the request that you sent to team or central server to accept on your new modifications that you do on their repo 
+for example you make modification in angular framework and contribute on it and it's not allowd to be member in the team and put
+your modifications directly.
+you make fork on the team repo and put you modification and sent pull request and write the title and descriptaion of request
+hint if there is any conflict in your files(modification) with that exist in the base repo, it will be appeared to you and this is one of the
+reason to accept this pull request. when this pull request aceppted, it will show merged under the pull request.
+you can delete the fork that you take it to make modification as you can take anohter fork in any time. when the pull request ended,
+it will show as closed and don't appear as pull request, and the pull request will appear in the base repo as commit that inside it
+the modification, and another commit that repo owner make merge to this modifications. who sent the pull request and it's accepted, he will
+appear in the contributor in the base repo. when we modify the repo with pull request we can select to make this modification on the master
+branch or make new branch. the company make the line of development(another branch) to add a new feature and send it, then delete this branch.
+hint: every company have a pattern to write her branch name. when we make the another branch to pull request, this will be sent to master branch
+firstly, like first phase(from to same github mail) to accept this modification to send it to master branch and then make another pull request 
+to send it from master branch from github mail to another master branch in another github mail.
+
+Alias: use the less words to express about a long command that you write it a lot to save time in writing this comand and abrreviate this
+command. to use alias we write in the command line : git config --global alias.alias name command. global means make the alias globally on 
+the command not the repo level. for example on the alias : git config --global alias.st status. we make (st) express about git status command
+hint: show the alias name express what by using: git config --global alias.st
+hint: the alias doesn't remove the origin command as this is alias. any command have space, we should put it in the single or double qoute
+we can edit the alias by openning the edit
